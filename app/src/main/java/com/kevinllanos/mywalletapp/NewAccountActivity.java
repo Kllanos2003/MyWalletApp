@@ -23,8 +23,7 @@ public class NewAccountActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(NewAccountActivity.this , MainActivity.class);
-                startActivities(myIntent);
-
+                startActivity(myIntent);
             }
         });
     }
