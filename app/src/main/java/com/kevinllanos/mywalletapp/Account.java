@@ -4,11 +4,26 @@ public class Account {
     private String name;
     private String typeAccount;
     private Double currentValue;
+    private String imagenurl;
 
-    public Account(String name, String typeAccount, Double currentValue) {
+
+    public Account(String name, String typeAccount, Double currentValue, String imagenurl) {
         this.name = name;
         this.typeAccount = typeAccount;
         this.currentValue = currentValue;
+        this.imagenurl = imagenurl;
+    }
+
+    public Account(String name) {
+        this.name = name;
+    }
+
+    public String getImagenurl() {
+        return imagenurl;
+    }
+
+    public void setImagenurl(String imagenurl) {
+        this.imagenurl = imagenurl;
     }
 
     public String getName() {
